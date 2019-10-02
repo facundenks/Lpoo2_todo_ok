@@ -145,3 +145,4 @@ C:\Users\Vani\Documents\Facultad\LPOO II\Repositorio\Tp1_lpoo2_2019\Vistas\obj\x
 C:\Users\Vani\Documents\Facultad\LPOO II\Repositorio\Tp1_lpoo2_2019\Vistas\obj\x86\Debug\Vistas.g.resources
 C:\Users\Vani\Documents\Facultad\LPOO II\Repositorio\Tp1_lpoo2_2019\Vistas\obj\x86\Debug\Vistas.Properties.Resources.resources
 C:\Users\Vani\Documents\Facultad\LPOO II\Repositorio\Tp1_lpoo2_2019\Vistas\obj\x86\Debug\Vistas.csproj.GenerateResource.Cache
+C:\Users\Vani\Documents\Facultad\LPOO II\Repositorio\Tp1_lpoo2_2019\Vistas\bin\Debug\Vistas.exe.config
