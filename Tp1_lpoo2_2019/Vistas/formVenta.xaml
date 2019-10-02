@@ -22,7 +22,8 @@
             <Button Content="30" Margin="69,332,19,92" x:Name="btn30" Background="Green" Click="vender_Click" />
             <Button Content="33" Margin="14,378,74,46" x:Name="btn33" Background="Green" Click="vender_Click" />
             <Button Content="34" Margin="69,0,19,46" x:Name="btn34" Height="40" VerticalAlignment="Bottom" Background="Green" Click="vender_Click" />
-            <Button Content="38" Margin="0,424,74,0" x:Name="btn38" Background="Green" Click="vender_Click" HorizontalAlignment="Right" Width="40" />
+            <Button Content="38" Margin="0,424,19,0" x:Name="btn38" Background="Green" Click="vender_Click" HorizontalAlignment="Right" Width="40" />
+            <Button Background="Green" Content="37" Margin="14,0,74,0" x:Name="btn37" Click="vender_Click" Height="40" VerticalAlignment="Bottom" />
         </Grid>
         <Grid Height="464" HorizontalAlignment="Left" Margin="138,12,0,0" Name="grid2" VerticalAlignment="Top" Width="128">
             <Button Content="3" Margin="14,10,74,414" x:Name="btn3" Background="Green" Click="vender_Click" />
@@ -43,8 +44,8 @@
             <Button Content="32" Margin="69,332,19,92" x:Name="btn32" Background="Green" Click="vender_Click" />
             <Button Content="35" Margin="14,378,74,46" x:Name="btn35" Background="Green" Click="vender_Click" />
             <Button Content="36" Height="40" Margin="69,0,19,46" x:Name="btn36" VerticalAlignment="Bottom" Background="Green" Click="vender_Click" />
-            <Button Content="39" Margin="14,424,84,0" x:Name="btn39" Background="Green" Click="vender_Click" />
-            <Button Content="40" Margin="69,424,-16,0" x:Name="btn40" Background="Green" Click="vender_Click" />
+            <Button Content="39" Margin="14,424,74,0" x:Name="btn39" Background="Green" Click="vender_Click" />
+            <Button Content="40" Margin="68,424,20,0" x:Name="btn40" Background="Green" Click="vender_Click" />
         </Grid>
         <Label Content="Libre:" Margin="31,482,209,43" Name="label1" />
         <Label Content="Ocupado:" Margin="9,513,207,12" Name="label2" />

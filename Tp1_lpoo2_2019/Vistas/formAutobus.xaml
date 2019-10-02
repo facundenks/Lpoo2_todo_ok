@@ -7,7 +7,7 @@
         <Label Content="Patente:" Height="28" HorizontalAlignment="Left" Margin="68,146,0,0" Name="label2" VerticalAlignment="Top" />
         <Label Content="Servicio:" Height="28" HorizontalAlignment="Left" Margin="68,99,0,0" Name="label3" VerticalAlignment="Top" />
         <Label Content="Capacidad:" Height="28" HorizontalAlignment="Left" Margin="54,52,0,0" Name="label4" VerticalAlignment="Top" />
-        <TextBox Margin="137,10,51,0" Name="txtId" KeyDown="txtId_KeyDown" Height="23" VerticalAlignment="Top" />
+        <TextBox Margin="137,10,51,0" Name="txtId" Height="23" VerticalAlignment="Top" IsEnabled="False" />
         <TextBox Margin="137,56,51,279" Name="txtCapacidad" KeyDown="txtCapacidad_KeyDown" />
         <TextBox Margin="137,151,51,185" Name="txtPatente" />
         <ComboBox Margin="137,104,51,232" Name="cmbServicio">

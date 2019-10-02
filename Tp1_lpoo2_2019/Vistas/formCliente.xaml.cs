@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using ClasesBase;
-
+using ClasesBase.DAO.Repositorio;
 namespace Vistas
 {
     /// <summary>
@@ -21,6 +21,7 @@ namespace Vistas
     public partial class formCliente : Window
     {
         Cliente oCliente = new Cliente();
+        ClienteRepositorio _clienteRepositorio = new ClienteRepositorio();
 
         public formCliente()
         {
@@ -53,16 +54,15 @@ namespace Vistas
                 if (txtApellido.Text != "" && txtDni.Text != "" && txtEmail.Text != "" && txtNombre.Text != "" && txtTelefono.Text != "")
                 {
 
-                    oCliente.Cli_dni = txtDni.Text;
-                    oCliente.Cli_nombre = txtNombre.Text;
-                    oCliente.Cli_apellido = txtApellido.Text;
-                    oCliente.Cli_email = txtEmail.Text;
-                    oCliente.Cli_telefono = txtTelefono.Text;
+                    oCliente.cli_dni = txtDni.Text;
+                    oCliente.cli_nombre = txtNombre.Text;
+                    oCliente.cli_apellido = txtApellido.Text;
+                    oCliente.cli_email = txtEmail.Text;
+                    oCliente.cli_telefono = txtTelefono.Text;
 
                     limpiar();
 
-                    MessageBox.Show("Nombre: " + oCliente.Cli_nombre + "\n Apellido: " + oCliente.Cli_apellido
-                    + "\n DNI: " + oCliente.Cli_dni + "\n Email: " + oCliente.Cli_email + "\n Telefono: " + oCliente.Cli_telefono);
+                    _clienteRepositorio.AgrgarCliente(oCliente);
                 }
                 else {
                     MessageBox.Show("Completar todos los campos");

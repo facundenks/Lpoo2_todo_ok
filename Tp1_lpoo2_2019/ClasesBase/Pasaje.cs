@@ -14,9 +14,9 @@ namespace ClasesBase
             get { return pas_codigo; }
             set { pas_codigo = value; }
         }
-        private int cli_dni;
+        private string cli_dni;
 
-        public int Cli_dni
+        public string Cli_dni
         {
             get { return cli_dni; }
             set { cli_dni = value; }

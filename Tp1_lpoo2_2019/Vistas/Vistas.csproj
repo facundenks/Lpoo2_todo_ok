@@ -36,8 +36,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,13 +65,32 @@
     <Compile Include="formLogin.xaml.cs">
       <DependentUpon>formLogin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\gestionMenu\UserControlGestion.xaml.cs">
+      <DependentUpon>UserControlGestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\gestionMenu\UserControlVentas.xaml.cs">
+      <DependentUpon>UserControlVentas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="userControls\uGestionVentas\uPasaje.xaml.cs">
+      <DependentUpon>uPasaje.xaml</DependentUpon>
+    </Compile>
     <Compile Include="userControls\uLogin\uLogin.xaml.cs">
       <DependentUpon>uLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="userControls\uMensaje\uBienvenida.xaml.cs">
       <DependentUpon>uBienvenida.xaml</DependentUpon>
     </Compile>
+    <Compile Include="userControls\userControlABM\UserControlABMUsuario.xaml.cs">
+      <DependentUpon>UserControlABMUsuario.xaml</DependentUpon>
+    </Compile>
     <Page Include="formLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,11 +131,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="userControls\gestionMenu\UserControlGestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userControls\gestionMenu\UserControlVentas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userControls\uGestionVentas\uPasaje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="userControls\uLogin\uLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="userControls\uMensaje\uBienvenida.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userControls\userControlABM\UserControlABMUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,6 +174,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,7 +209,33 @@
   <ItemGroup>
     <Resource Include="Images\ICONO-BUS-OK.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\salir2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\585e4bd7cb11b227491c3397.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\b54944f7322722034cfda55e601b4f8d-icono-de-viaje-de-autob-s-redondo-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\f467c342671853ac3a9418e3f1ddcc9a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dollar-3717534_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bus-stop-symbol-icon-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1841601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\18416011.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

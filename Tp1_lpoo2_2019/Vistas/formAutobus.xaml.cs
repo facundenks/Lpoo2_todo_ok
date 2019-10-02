@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ClasesBase;
+using ClasesBase.DAO.Repositorio;
 
 namespace Vistas
 {
@@ -20,18 +21,11 @@ namespace Vistas
     public partial class formAutobus : Window
     {
         Autobus oAutobus = new Autobus();
+        AutobusRepositorio _autobusRepositorio = new AutobusRepositorio();
 
         public formAutobus()
         {
             InitializeComponent();
-        }
-
-        private void txtId_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key >= Key.D0 && e.Key <= Key.D9 || e.Key >= Key.NumPad0 && e.Key <= Key.NumPad9)
-                e.Handled = false;
-            else
-                e.Handled = true;
         }
 
         private void txtCapacidad_KeyDown(object sender, KeyEventArgs e)
@@ -44,17 +38,15 @@ namespace Vistas
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            if (txtId.Text != "" && txtCapacidad.Text != "" && cmbServicio.SelectedIndex != -1 && txtPatente.Text != "")
+            if (txtCapacidad.Text != "" && cmbServicio.SelectedIndex != -1 && txtPatente.Text != "")
             {
-                oAutobus.Aut_codigo = Convert.ToInt32(txtId.Text);
-                oAutobus.Aut_capacidad = Convert.ToInt32(txtCapacidad.Text);
-                oAutobus.Aut_tipoServicio = Convert.ToString(((ComboBoxItem)cmbServicio.SelectedItem).Content);
-                oAutobus.Aut_matricula = txtPatente.Text;
+                oAutobus.aut_capacidad = Convert.ToInt32(txtCapacidad.Text);
+                oAutobus.aut_tiposervicio = Convert.ToString(((ComboBoxItem)cmbServicio.SelectedItem).Content);
+                oAutobus.aut_matricula = txtPatente.Text;
 
                 limpiar();
 
-                MessageBox.Show("Codigo: "+oAutobus.Aut_codigo+"\n Capacidad: "+oAutobus.Aut_capacidad+
-                    "\n Servicio: "+oAutobus.Aut_tipoServicio+"\n Matricula: "+oAutobus.Aut_matricula);
+                _autobusRepositorio.AgrgarAutobus(oAutobus);
             }
             else
             {

@@ -37,7 +37,7 @@ namespace Vistas
 
         private void InicializarTemporizador()
         {
-            _timer.Interval = TimeSpan.FromMilliseconds(500);
+            _timer.Interval = TimeSpan.FromMilliseconds(300);
             _timer.Tick += Bienvenida;
             _timer.Start();
         }

@@ -8,7 +8,7 @@
     <Grid Height="299" Width="301">
         <Label Content="Bienvenido al" FontFamily="Arial Unicode MS" FontSize="18" Foreground="#E58D8282" Height="34" HorizontalAlignment="Center" Margin="85,26,75,0" Name="lbl1" VerticalAlignment="Top" Width="140" />
         <Label Content="Sistema de Venta de Pasajes" FontFamily="Arial Unicode MS" FontSize="18" Foreground="#E58D8282" Height="34" HorizontalAlignment="Center" Margin="17,66,27,0" Name="lbl2" VerticalAlignment="Top" Width="256" />
-        <Rectangle Height="114" Margin="76,106,91,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top">
+        <Rectangle Height="114" Margin="76,106,91,0" Name="rectangle1" Stroke="{x:Null}" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Vistas;component/Images/ICONO-BUS-OK.png" />
             </Rectangle.Fill>

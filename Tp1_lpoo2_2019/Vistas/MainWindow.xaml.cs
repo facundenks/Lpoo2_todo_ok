@@ -20,27 +20,16 @@ namespace Vistas
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<Usuario> usuarios = new List<Usuario>();
-        private String rol;
+        
+        private Usuario oUsuario = new Usuario();
 
-        public String Rol
+        public Usuario OUsuario
         {
-            get { return rol; }
-            set { rol = value; }
-        }
-        private String nombreApellido;
-
-        public String NombreApellido
-        {
-            get { return nombreApellido; }
-            set { nombreApellido = value; }
+            get { return oUsuario; }
+            set { oUsuario = value; }
         }
 
-        public List<Usuario> Usuarios
-        {
-            get { return usuarios; }
-            set { usuarios = value; }
-        }
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -53,13 +42,13 @@ namespace Vistas
 
         private void validar()
         {
-            if (Rol == "administrador")
+            if (oUsuario.rol_codigo == 1)
             {
                 vent.Visibility = Visibility.Visible;
                 ges.Visibility = Visibility.Hidden;
             }
             else {
-                if (Rol == "operador")
+                if (oUsuario.rol_codigo == 2)
                 {
                     vent.Visibility = Visibility.Hidden;
                     ges.Visibility = Visibility.Visible;
