@@ -87,7 +87,9 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Modelo.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\BDEntities.datasource" />
     <None Include="Properties\DataSources\BDpasajesEntities.datasource" />
     <None Include="Properties\DataSources\PasajesEntities.datasource" />
