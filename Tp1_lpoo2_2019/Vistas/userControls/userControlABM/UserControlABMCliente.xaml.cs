@@ -17,9 +17,9 @@ namespace Vistas.userControls.userControlABM
     /// <summary>
     /// Interaction logic for UserControlABMUsuario.xaml
     /// </summary>
-    public partial class UserControlABMUsuario : UserControl
+    public partial class UserControlABMCliente : UserControl
     {
-        public UserControlABMUsuario()
+        public UserControlABMCliente()
         {
             InitializeComponent();
         }
@@ -30,6 +30,11 @@ namespace Vistas.userControls.userControlABM
         }
 
         private void btnLimpiarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGuardarUsuario_Click(object sender, RoutedEventArgs e)
         {
 
         }
