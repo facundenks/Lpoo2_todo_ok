@@ -22,12 +22,12 @@
                     <RowDefinition Height="137*" />
                 </Grid.RowDefinitions>
 
-                <Label Content="ID" Grid.RowSpan="3" Height="28" HorizontalAlignment="Left" Margin="0,10,0,0" Name="lblDNI" VerticalAlignment="Top" DataContext="{Binding}" IsEnabled="True" Target="{Binding}" Foreground="Black" FontWeight="Bold" Grid.Column="1"/>
+                <Label Content="Maty se la come" Grid.RowSpan="3" Height="28" HorizontalAlignment="Left" Margin="0,10,0,0" Name="lblDNI" VerticalAlignment="Top" DataContext="{Binding}" IsEnabled="True" Target="{Binding}" Foreground="Black" FontWeight="Bold" Grid.Column="1"/>
                 <Label Content="Capacidad" Grid.RowSpan="3" Height="28" HorizontalAlignment="Left" Margin="0,50,0,0" Name="lblId" VerticalAlignment="Top" DataContext="{Binding}" IsEnabled="True" Target="{Binding}" Foreground="Black" FontWeight="Bold" Grid.Column="1"/>
                 <Label Content="Servicio" Grid.RowSpan="3" Height="28" HorizontalAlignment="Left" Margin="0,90,0,0" Name="lblCapacidad" VerticalAlignment="Top" DataContext="{Binding}" IsEnabled="True" Target="{Binding}" Foreground="Black" FontWeight="Bold" Grid.Column="1"/>
                 <Label Content="Patente" Grid.RowSpan="3" Height="28" HorizontalAlignment="Left" Margin="0,130,0,0" Name="lblTelefono" VerticalAlignment="Top" DataContext="{Binding}" IsEnabled="True" Target="{Binding}" Foreground="Black" FontWeight="Bold" Grid.Column="1"/>
                 
-                <TextBox x:Uid="FormTextBox" Grid.Row="0" Grid.RowSpan="3" HorizontalAlignment="Left" Margin="87,10,0,0" Name="txtID" VerticalAlignment="Top" IsReadOnly="False" Grid.Column="1" IsEnabled="True" />
+                <TextBox x:Uid="FormTextBox" HorizontalAlignment="Left" Margin="112,11,0,0" Name="txtID" VerticalAlignment="Top" IsReadOnly="False" Grid.Column="1" IsEnabled="True" />
                 <TextBox x:Uid="FormTextBox" Grid.Row="0" Grid.RowSpan="3" HorizontalAlignment="Left" Margin="87,50,0,0" Name="txtCapacidad" VerticalAlignment="Top" IsReadOnly="False" Grid.Column="1" IsEnabled="True" />
                 <ComboBox x:Uid="FormTextBox" Grid.Row="2" HorizontalAlignment="Left" Margin="87,34,0,0" Name="cmbServicio" VerticalAlignment="Top" IsReadOnly="False" Grid.Column="1" IsEnabled="True" Width="120" />
                 <TextBox x:Uid="FormTextBox" Grid.Row="0" Grid.RowSpan="3" HorizontalAlignment="Left" Margin="87,130,0,0" Name="txtPatente" VerticalAlignment="Top" IsReadOnly="False" Grid.Column="1" IsEnabled="True" />
