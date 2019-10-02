@@ -83,6 +83,9 @@
     <Compile Include="userControls\uMensaje\uBienvenida.xaml.cs">
       <DependentUpon>uBienvenida.xaml</DependentUpon>
     </Compile>
+    <Compile Include="userControls\userControlABM\UserControlABMAutobus.xaml.cs">
+      <DependentUpon>UserControlABMAutobus.xaml</DependentUpon>
+    </Compile>
     <Compile Include="userControls\userControlABM\UserControlABMCliente.xaml.cs">
       <DependentUpon>UserControlABMCliente.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="userControls\uMensaje\uBienvenida.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="userControls\userControlABM\UserControlABMAutobus.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
